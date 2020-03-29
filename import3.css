@@ -1,0 +1,9 @@
+.boxcontent a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.gobackbutton a:visited {
+    color: rgba(255, 101, 121, 0.774);
+    text-decoration: none;
+}

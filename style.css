@@ -1,5 +1,27 @@
+@import "./import1.css";
+@import "./import2.css";
+@import "./import3.css";
 body {
     margin: 0;
+}
+
+.footer h1 {
+    margin: 0;
+}
+
+.gobackbutton {
+    display: block;
+}
+
+#fakebutton {
+    position: absolute;
+    right: 10px
+}
+
+#arrow {
+    position: absolute;
+    width: 240px;
+    height: auto;
 }
 
 ::selection {
@@ -37,20 +59,6 @@ body {
     margin: 0;
 }
 
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-a:link {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(236, 236, 236)
-}
-
 .center-cropped {
     width: inherit;
     height: 400px;
@@ -73,26 +81,15 @@ a:hover {
     color: rgb(250, 250, 250);
 }
 
-.header h1 {
+header h1 {
     padding-left: 30px;
 }
 
-.facebook {
-    grid-area: boxslot1;
+.icon {
     display: flex;
     justify-content: center;
-}
-
-.twitter {
-    grid-area: boxslot2;
-    display: flex;
-    justify-content: center
-}
-
-.linkedin {
-    grid-area: boxslot3;
-    display: flex;
-    justify-content: center
+    margin: 0;
+    grid-area: boxslot;
 }
 
 .navigationbar {
@@ -107,7 +104,7 @@ a:hover {
     padding-right: 10%;
 }
 
-.header {
+header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -147,12 +144,12 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(400px, auto);
-    grid-template-areas: "boxslot1 boxslot2 boxslot3";
+    grid-template-areas: "boxslot boxslot boxslot";
     margin: none;
 }
 
 .postcontent {
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     display: inline-block;
     position: relative;
     justify-content: center;
@@ -258,9 +255,15 @@ a:hover {
         padding: 10px 5% 10px 5%;
         display: block;
     }
+    .gobackbutton {
+        display: block;
+    }
 }
 
 @media(min-width:1140px) {
+    .gobackbutton {
+        display: none;
+    }
     .nav {
         display: block;
     }
