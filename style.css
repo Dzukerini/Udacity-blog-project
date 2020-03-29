@@ -10,14 +10,9 @@ body {
     display: inline-block;
     position: relative;
     width: 100%;
-    /* align-items: center;
-    align-self: center;
-    align-content: center; */
     justify-content: center;
     font-family: 'Roboto Slab', serif;
     color: rgb(219, 67, 66);
-    /* padding-left: 5%;
-    padding-right: 5%; */
 }
 
 .navigationbar h2 {
@@ -28,8 +23,6 @@ body {
     justify-content: left;
     font-family: 'Roboto Slab', serif;
     color: rgb(219, 67, 66);
-    /* padding-left: 15%;
-    padding-right: 15%; */
     margin: 0;
 }
 
@@ -41,8 +34,6 @@ body {
     justify-content: left;
     font-family: 'Roboto Slab', serif;
     color: rgb(219, 67, 66);
-    /* padding-left: 15%;
-    padding-right: 15%; */
     margin: 0;
 }
 
@@ -80,11 +71,6 @@ a:hover {
     width: 100%;
     justify-content: center;
     color: rgb(250, 250, 250);
-    /* justify-items: center;
-    align-items: center; */
-    /* text-justify: center; */
-    /* text-align: center;
-    text-align-last: center; */
 }
 
 .header h1 {
@@ -110,7 +96,6 @@ a:hover {
 }
 
 .navigationbar {
-    /* width: 300px; */
     overflow-wrap: anywhere;
     min-height: 600px;
     height: minmax(600px, auto);
@@ -159,10 +144,6 @@ a:hover {
 }
 
 .content {
-    /* display: flex;
-    flex-wrap: wrap;
-
-    margin: none; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: minmax(400px, auto);
@@ -191,52 +172,27 @@ a:hover {
 
 .main {
     grid-area: main;
-    /* position: relative; */
     background-color: rgb(241, 241, 241);
 }
 
 .boxcontent {
-    /* width: 90%;
-    height: 380px; */
     background-color: none;
     margin: 0;
     display: flex;
     position: relative;
     text-align: center;
-    /* text-align: center;
-    text-align-last: center; */
     width: 270px;
     min-height: inherit;
-    /* background-color: rgb(230, 230, 230); */
-    /* border-radius: 10px; */
     opacity: 0.94;
     font-family: 'Quicksand', sans-serif;
 }
 
 .box {
-    /* width: 100%; */
     min-height: 400px;
-    /* grid-area: box-slot; */
     display: grid;
-    /* grid-gap: 10px; */
-    /* margin-top: 5px;
-    margin-bottom: 5px;*/
     padding: 10px 5% 10px 5%;
     display: block;
 }
-
-
-/* zaczynam fieste */
-
-
-/* .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-} */
 
 .middle {
     transition: .5s ease;
@@ -264,19 +220,13 @@ a:hover {
     padding: 16px 32px;
 }
 
-
-/* koncze fieste */
-
 @media(max-width:900px) {
     .nav {
         display: none;
-        /* background-color: rgb(241, 241, 241); */
     }
     .main {
-        /* margin: 0; */
         grid-area: main;
         min-width: inherit;
-        /* position: relative; */
         background-color: rgb(241, 241, 241);
     }
     .container {
@@ -290,30 +240,21 @@ a:hover {
     }
     .content {
         display: grid;
-        /* min-width: ; */
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(400px, auto);
         grid-template-areas: "boxslot";
         margin: none;
     }
     .boxcontent {
-        /* width: 90%;
-        height: 380px; */
         width: 100%;
         min-height: inherit;
-        /* background-color: rgb(255, 0, 0); */
-        /* border-radius: 10px; */
         font-family: 'Quicksand', sans-serif;
     }
     .box {
-        /* width: 100%; */
         min-height: 400px;
-        /* grid-area: box-slot; */
         display: grid;
         grid-gap: 10px;
         align-items: center;
-        /* margin-top: 5px;
-        margin-bottom: 5px;*/
         padding: 10px 5% 10px 5%;
         display: block;
     }
